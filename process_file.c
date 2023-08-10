@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * process_file - Process a Monty bytecode file, executing opcode functions.
+ * @file: Pointer to the opened Monty bytecode file.
+ *
+ * Return: Void
+ */
+
 void process_file(FILE *file)
 {
 	unsigned int line_number = 0;
