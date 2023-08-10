@@ -41,6 +41,6 @@ typedef struct instruction_s
 
 void (*exec_opcode_func(char *opcode))(stack_t **stack, unsigned int line_number);
 void push_opcode(stack_t **stack, unsigned int line_number);
-void pall_opcode(stack_t **stack);
+void pall_opcode(stack_t **stack, unsigned int __attribute__((unused)) n);
 
 #endif

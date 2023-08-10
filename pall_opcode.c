@@ -7,7 +7,7 @@
  * Return: Void
  */
 
-void pall_opcode(stack_t **stack)
+void pall_opcode(stack_t **stack, unsigned int __attribute__((unused)) n)
 {
 	stack_t *current = *stack;
 
