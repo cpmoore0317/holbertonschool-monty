@@ -1,6 +1,11 @@
 #include "monty.h"
 
-/**
+/** main - Checks if the file is valid, opens file, gets input, checks for
+ * opcodes, executes opcodes, cleans up data and closes file.
+ * @argc: Number of arguments
+ * @argv: Vector of arguments
+ *
+ * Return: EXIT_SUCCESS
  */
 int main(int argc, char **argv)
 {
@@ -27,12 +32,12 @@ int main(int argc, char **argv)
 	while (getline(&line_buffer, &line_buffer_size, monty_file) != -1)
 	{
 		line_number++;
-		opcode_string = strtok(line_buffer, " \n\t");
+		opcode_string = strtok(line_buffer, DELIM);
 
 		if (opcode_string == NULL || strcmp(opcode_string, "\n") == 0)
 				continue;
 
-		function_pointer = opcode_function(opcode_string);
+		function_pointer = exec_opcode_func(opcode_string);
 
 		if (function_pointer == NULL)
 		{
