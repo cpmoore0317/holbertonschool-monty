@@ -52,7 +52,7 @@ int main(int argc, char **argv)
 	}
 	free(line_buffer);
 	fclose(monty_file);
-	/*free_all(top);*/
+	free_stack(top);
 
 	return (EXIT_SUCCESS);
 }
