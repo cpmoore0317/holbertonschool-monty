@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 
 		if (function_pointer == NULL)
 		{
-			fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode_sring);
+			fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode_string);
 			exit(EXIT_FAILURE);
 		}
 
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 	}
 	free(line_buffer);
 	fclose(monty_file);
-	free_all(top);
+	/*free_all(top);*/
 
 	return (EXIT_SUCCESS);
 }		
