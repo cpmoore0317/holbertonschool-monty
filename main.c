@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		if (opcode_string == NULL || strcmp(opcode_string, "\n") == 0)
 				continue;
 
-		function_pointer = execute(opcode_string);
+		function_pointer = opcode_function(opcode_string);
 
 		if (function_pointer == NULL)
 		{
@@ -47,7 +47,4 @@ int main(int argc, char **argv)
 	free_all(top);
 
 	return (EXIT_SUCCESS);
-}
-
-
-		
+}		
