@@ -3,6 +3,7 @@
 /**
  * pall_opcode - Print all nodes of the current stack
  * @stack: Pointer to the stack
+ * @n: Current line number (unused)
  *
  * Return: Void
  */
