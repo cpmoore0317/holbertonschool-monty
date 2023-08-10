@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 	}
 
 	FILE *monty_file = fopen(argv[1], "r");
+
 	if (monty_file == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -35,7 +36,7 @@ int main(int argc, char **argv)
 		opcode_string = strtok(line_buffer, DELIM);
 
 		if (opcode_string == NULL || strcmp(opcode_string, "\n") == 0)
-				continue;
+			continue;
 
 		function_pointer = exec_opcode_func(opcode_string);
 
@@ -52,4 +53,4 @@ int main(int argc, char **argv)
 	/*free_all(top);*/
 
 	return (EXIT_SUCCESS);
-}		
+}	

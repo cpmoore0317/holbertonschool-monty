@@ -20,7 +20,7 @@ void push_opcode(stack_t **stack, unsigned int line_number)
 	}
 
 	num = atoi(char_to_int);
-	new_node = malloc (sizeof(stack_t));
+	new_node = malloc(sizeof(stack_t));
 
 	if (new_node == NULL)
 	{
