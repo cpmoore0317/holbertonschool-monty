@@ -38,3 +38,8 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+void (*exec_opcode_func(char *opcode))(stack_t **stack, unsigned int line_number);
+void push_opcode(stack_t **stack, unsigned int line_number);
+
+#endif
