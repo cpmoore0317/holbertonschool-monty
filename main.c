@@ -11,12 +11,12 @@
 
 int main(int argc, char **argv)
 {
-	unsigned int line_number = 0;
+	/*unsigned int line_number = 0;
 	char *line_buffer = NULL;
 	char *opcode_string = NULL;
 	size_t line_buffer_size = 0;
 	stack_t *top = NULL;
-	void (*function_pointer)(stack_t **, unsigned int);
+	void (*function_pointer)(stack_t **, unsigned int);*/
 
 	if (argc != 2)
 	{
@@ -32,7 +32,9 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	while (getline(&line_buffer, &line_buffer_size, monty_file) != -1)
+	process_file(monty_file);
+
+	/*while (getline(&line_buffer, &line_buffer_size, monty_file) != -1)
 	{
 		line_number++;
 		opcode_string = strtok(line_buffer, DELIM);
@@ -50,9 +52,9 @@ int main(int argc, char **argv)
 
 		function_pointer(&top, line_number);
 	}
-	free(line_buffer);
+	free(line_buffer);*/
 	fclose(monty_file);
-	free_stack(top);
+	/*free_stack(top);*/
 
 	return (EXIT_SUCCESS);
 }
