@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * exec_opcode_func - Calls the correct opcode function
+ * exec_opcode - Calls the correct opcode function
  * @opcode: Function to find
  *
  * Return: Correct function
  */
 
-void (*exec_opcode_func(char *opcode))(stack_t **stack, unsigned int line_number)
+void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int line_number)
 {
 	instruction_t function_select[] = {
 		{"push", push_opcode},
