@@ -44,5 +44,6 @@ void push_opcode(stack_t **stack, unsigned int line_number);
 void pall_opcode(stack_t **stack, unsigned int __attribute__((unused)) n);
 void free_stack(stack_t *stack);
 void process_file(FILE *file);
+void pint_opcode(stack_t **stack, unsigned int ln);
 
 #endif
