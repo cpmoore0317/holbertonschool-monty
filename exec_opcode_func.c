@@ -1,6 +1,7 @@
 #include "monty.h"
 
-/** exec_opcode_func - Calls the correct opcode function
+/**
+ * exec_opcode_func - Calls the correct opcode function
  * @opcode: Function to find
  *
  * Return: Correct function

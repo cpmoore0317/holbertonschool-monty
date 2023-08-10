@@ -1,6 +1,7 @@
 #include "monty.h"
 
-/** main - Checks if the file is valid, opens file, gets input, checks for
+/**
+ * main - Checks if the file is valid, opens file, gets input, checks for
  * opcodes, executes opcodes, cleans up data and closes file.
  * @argc: Number of arguments
  * @argv: Vector of arguments
@@ -53,4 +54,4 @@ int main(int argc, char **argv)
 	/*free_all(top);*/
 
 	return (EXIT_SUCCESS);
-}	
+}
