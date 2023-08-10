@@ -11,8 +11,8 @@ void (*exec_opcode_func(char *opcode))(stack_t **stack, unsigned int line_number
 {
 	instruction_t function_select[] = {
 		{"push", push_opcode},
-		/*{"pall", pall_opcode},
-		{"pint", pint_opcode},
+		{"pall", pall_opcode},
+		/*{"pint", pint_opcode},
 		{"pop", pop_opcode},
 		{"swap", swap_opcode},
 		{"add", add_opcode},

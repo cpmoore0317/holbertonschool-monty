@@ -8,6 +8,7 @@
  *
  * Return: EXIT_SUCCESS
  */
+
 int main(int argc, char **argv)
 {
 	unsigned int line_number = 0;

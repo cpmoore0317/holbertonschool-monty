@@ -1,4 +1,5 @@
 #include "monty.h"
+
 /**
  * push_opcode - Push a new node into the stack
  * @stack: Pointer to the stack
@@ -6,6 +7,7 @@
  *
  * Return: No return, EXIT_FAILURE if fails
  */
+
 void push_opcode(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new_node = NULL;
