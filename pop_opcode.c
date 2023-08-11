@@ -1,6 +1,10 @@
 #include "monty.h"
 
-/**
+/** pop_opcode - Removes the top element of the stack
+ * @stack: Pointer to the stack
+ * @ln: Current line number
+ *
+ * Return: Void, EXIT_FAILURE if stack is empty 
  */
 
 void pop_opcode(stack_t **stack, unsigned int ln)
