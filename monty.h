@@ -40,10 +40,11 @@ typedef struct instruction_s
 } instruction_t;
 
 void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int line_number);
-void push_opcode(stack_t **stack, unsigned int line_number);
-void pall_opcode(stack_t **stack, unsigned int __attribute__((unused)) n);
+void push_opcode(stack_t **stack, unsigned int ln);
+void pall_opcode(stack_t **stack, unsigned int __attribute__((unused)) ln);
 void free_stack(stack_t *stack);
 void process_file(FILE *file);
 void pint_opcode(stack_t **stack, unsigned int ln);
+void pop_opcode(stack_t **stack, unsigned int ln);
 
 #endif

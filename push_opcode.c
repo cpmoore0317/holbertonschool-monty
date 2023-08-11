@@ -8,7 +8,7 @@
  * Return: No return, EXIT_FAILURE if fails
  */
 
-void push_opcode(stack_t **stack, unsigned int line_number)
+void push_opcode(stack_t **stack, unsigned int ln)
 {
 	stack_t *new_node = NULL;
 	char *char_to_int = NULL;
@@ -17,7 +17,7 @@ void push_opcode(stack_t **stack, unsigned int line_number)
 	char_to_int = strtok(NULL, DELIM);
 	if (char_to_int == NULL || !isdigit((unsigned char)*char_to_int))
 	{
-		fprintf(stderr, "L%u: usage: push integer\n", line_number);
+		fprintf(stderr, "L%u: usage: push integer\n", ln);
 		exit(EXIT_FAILURE);
 	}
 
