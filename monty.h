@@ -46,5 +46,6 @@ void free_stack(stack_t *stack);
 void process_file(FILE *file);
 void pint_opcode(stack_t **stack, unsigned int ln);
 void pop_opcode(stack_t **stack, unsigned int ln);
+void swap_opcode(stack_t **stack, unsigned int ln);
 
 #endif
