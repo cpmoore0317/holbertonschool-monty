@@ -15,8 +15,8 @@ void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int line_number)
 		{"pint", pint_opcode},
 		{"pop", pop_opcode},
 		{"swap", swap_opcode},
-		/*{"add", add_opcode},
-		{"nop", nop_opcode},*/
+		{"add", add_opcode},
+		/*{"nop", nop_opcode},*/
 	};
 
 	int i;
