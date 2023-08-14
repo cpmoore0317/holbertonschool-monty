@@ -7,7 +7,7 @@
  * Return: Correct function
  */
 
-void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int line_number)
+void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int ln)
 {
 	instruction_t function_select[] = {
 		{"push", push_opcode},
@@ -16,7 +16,7 @@ void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int line_number)
 		{"pop", pop_opcode},
 		{"swap", swap_opcode},
 		{"add", add_opcode},
-		/*{"nop", nop_opcode},*/
+		{"nop", nop_opcode},
 	};
 
 	int i;

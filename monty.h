@@ -39,7 +39,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int line_number);
+void (*exec_opcode(char *opcode))(stack_t **stack, unsigned int ln);
 void push_opcode(stack_t **stack, unsigned int ln);
 void pall_opcode(stack_t **stack, unsigned int __attribute__((unused)) ln);
 void free_stack(stack_t *stack);
@@ -48,5 +48,6 @@ void pint_opcode(stack_t **stack, unsigned int ln);
 void pop_opcode(stack_t **stack, unsigned int ln);
 void swap_opcode(stack_t **stack, unsigned int ln);
 void add_opcode(stack_t **stack, unsigned int ln);
+void nop_opcode(stack_t **stack, unsigned int ln);
 
 #endif
