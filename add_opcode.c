@@ -10,7 +10,7 @@
 
 void add_opcode(stack_t **stack, unsigned int ln)
 {
-	stack_t *node1 *node2
+	stack_t *node1, *node2;
 
 		if (*stack == NULL || (*stack)->next == NULL)
 		{
